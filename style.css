@@ -1,0 +1,73 @@
+/*################Default####################*/
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+}
+
+/*################## Nav bar ##########################*/
+
+nav ul {
+    background-color: #606060;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;  
+/*    el valor none permite mostrar una lista en la que sus elementos no contienen viñetas, números o letras*/
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right
+}
+
+ul.topnav li a {
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    min-height: 16px;
+    text-transform: uppercase;
+/*    border-radius: 0.78em;*/
+    color: white;
+    font-size: 19px;
+
+
+}
+
+ul.topnav li a:hover {
+    background-color: #FF9900 ;
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+
+ul.topnav li.button-icon {
+    float:right;
+    display: none;
+    
+}
+
+/*################# Mobile #################*/
+@media screen and (max-width: 680px){
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    
+    ul.topnav li.button-icon {
+        
+        display: block;
+    }
+}
+    
